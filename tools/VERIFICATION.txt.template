@@ -1,23 +1,23 @@
-VERIFICATION
+﻿VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 The packaged installer is available for independent download via the Releases
 page on PawnIO's Setup repository hosted on GitHub. A download link
 for the packaged version is included at the following URL:
-https://github.com/namazso/PawnIO.Setup/releases/tag/2.0.1
+%tagReleaseUrl%
 
 For convenience, this is a direct URL to the relevant asset:
-https://github.com/namazso/PawnIO.Setup/releases/download/2.0.1/PawnIO_setup.exe
+%binaryUrl%
 
-The following PowerShell command will print a calculated SHA256 hash:
+The following PowerShell command will print a calculated %checksumType% hash:
 
-    (Get-FileHash -Path PawnIO_setup.exe -Algorithm SHA256).Hash
+    (Get-FileHash -Path %binaryFileName% -Algorithm %checksumType%).Hash
 
 This command should be executed against an independently downloaded installer, as well
 as the copy distributed with the package. Both hash values should be identical. A
 matching hash value should confirm that no corruption or tampering has occurred
 during this package's generation process.
 
-For reference, the following SHA256 hash was calculated during the package's automated creation:
-3A34B5DF231F10F252C4B50D3C777534B2A2CEC5E1DF9466AB2DCA401C068C44
+For reference, the following %checksumType% hash was calculated during the package's automated creation:
+%checksumValue%
