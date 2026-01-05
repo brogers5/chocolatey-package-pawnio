@@ -10,7 +10,7 @@ $currentVersion = Get-CurrentVersion
 
 if ($currentVersion -eq $softwareVersion -and !$env:ChocolateyForce) {
   Write-Output "$softwareName v$softwareVersion is already installed."
-  Write-Output 'Skipping download and execution of installer.'
+  Write-Output 'Skipping execution of installer.'
 }
 else {
   if ($null -ne $currentVersion -and $currentVersion -le $softwareVersion) {
