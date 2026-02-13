@@ -5,10 +5,10 @@ in verifying that this package's contents are trustworthy.
 The packaged installer is available for independent download via the Releases
 page on PawnIO's Setup repository hosted on GitHub. A download link
 for the packaged version is included at the following URL:
-https://github.com/namazso/PawnIO.Setup/releases/tag/2.0.1
+https://github.com/namazso/PawnIO.Setup/releases/tag/2.1.0
 
 For convenience, this is a direct URL to the relevant asset:
-https://github.com/namazso/PawnIO.Setup/releases/download/2.0.1/PawnIO_setup.exe
+https://github.com/namazso/PawnIO.Setup/releases/download/2.1.0/PawnIO_setup.exe
 
 The following PowerShell command will print a calculated SHA256 hash:
 
@@ -20,4 +20,4 @@ matching hash value should confirm that no corruption or tampering has occurred
 during this package's generation process.
 
 For reference, the following SHA256 hash was calculated during the package's automated creation:
-3A34B5DF231F10F252C4B50D3C777534B2A2CEC5E1DF9466AB2DCA401C068C44
+A3A46226C5E2824F4CDD42BE0EECBABFC672C86F7889710F5AB1E6AD385B47A0

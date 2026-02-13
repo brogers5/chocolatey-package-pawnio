@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pawnio</id>
-    <version>2.0.1</version>
-    <packageSourceUrl>https://github.com/brogers5/chocolatey-package-pawnio/tree/v2.0.1</packageSourceUrl>
+    <version>2.1.0</version>
+    <packageSourceUrl>https://github.com/brogers5/chocolatey-package-pawnio/tree/v2.1.0</packageSourceUrl>
     <owners>sublym0nal</owners>
     <title>PawnIO</title>
     <authors>namazso</authors>
     <projectUrl>https://pawnio.eu/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/brogers5/chocolatey-package-pawnio@b79ae1a797ce5b7cfcfaf37b228322b1c1c620aa/pawnio.png</iconUrl>
-    <copyright>Copyright © 2025 namazso</copyright>
+    <copyright>Copyright © 2026 namazso</copyright>
     <licenseUrl>https://github.com/namazso/PawnIO/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/namazso/PawnIO</projectSourceUrl>
@@ -44,7 +44,7 @@ For future upgrade operations, consider opting into Chocolatey's `useRememberedA
 choco feature enable --name="'useRememberedArgumentsForUpgrades'"
 ```
 ]]></description>
-    <releaseNotes>https://github.com/namazso/PawnIO.Setup/releases/tag/2.0.1</releaseNotes>
+    <releaseNotes>https://github.com/namazso/PawnIO.Setup/releases/tag/2.1.0</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-os-dependency.extension" version="0.0.1" />
       <dependency id="chocolatey-core.extension" version="1.0.0" />
