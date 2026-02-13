@@ -8,6 +8,7 @@ $softwareName = 'PawnIO'
 [version] $softwareVersion = '2.0.1.0'
 $currentVersion = Get-CurrentVersion
 
+$installerFilePath = Join-Path -Path $toolsDir -ChildPath 'PawnIO_setup.exe'
 if ($currentVersion -eq $softwareVersion -and !$env:ChocolateyForce) {
   Write-Output "$softwareName v$softwareVersion is already installed."
   Write-Output 'Skipping execution of installer.'
@@ -21,7 +22,7 @@ else {
   $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     fileType       = 'EXE'
-    file64         = Join-Path -Path $toolsDir -ChildPath 'PawnIO_setup.exe'
+    file64         = $installerFilePath
     softwareName   = $softwareName
     silentArgs     = '-install -silent'
     validExitCodes = @(0)
@@ -45,3 +46,6 @@ else {
     Write-Warning 'Skipping shim creation - install location not detected'
   }
 }
+
+#Remove installer binary post-install to prevent disk bloat
+Remove-Item -Path $installerFilePath -Force -ErrorAction SilentlyContinue
