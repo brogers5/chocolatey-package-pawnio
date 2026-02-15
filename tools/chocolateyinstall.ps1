@@ -2,7 +2,7 @@
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 . $toolsDir\helpers.ps1
 
-Confirm-Win10
+Confirm-Win10 -ReqBuild 19041
 
 $softwareName = 'PawnIO'
 [version] $softwareVersion = '2.0.1.0'
