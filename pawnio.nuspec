@@ -14,9 +14,9 @@
     <licenseUrl>https://github.com/namazso/PawnIO/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/namazso/PawnIO</projectSourceUrl>
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
-    <!--<mailingListUrl>No public mailing list is available</mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <docsUrl>https://github.com/namazso/PawnIO.Modules/wiki/Getting-started-with-PawnIO</docsUrl>
+    <mailingListUrl>https://github.com/namazso/PawnIO.Modules/discussions</mailingListUrl>
+    <bugTrackerUrl>https://github.com/namazso/PawnIO.Setup/issues</bugTrackerUrl>
     <tags>pawnio pawn io kernel driver hardware 64-bit</tags>
     <summary>Scriptable universal kernel driver</summary>
     <description><![CDATA[# PawnIO
