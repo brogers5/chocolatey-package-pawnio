@@ -5,7 +5,7 @@ $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 Confirm-Win10 -ReqBuild 19041
 
 $softwareName = 'PawnIO'
-[version] $softwareVersion = '2.1.0'
+[version] $softwareVersion = '2.1.0.0'
 $currentVersion = Get-CurrentVersion
 $installerFilePath = Join-Path -Path $toolsDir -ChildPath 'PawnIO_setup.exe'
 
