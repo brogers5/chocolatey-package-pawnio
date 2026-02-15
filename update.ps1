@@ -40,7 +40,8 @@ function global:au_SearchReplace {
             '%binaryFileName%' = "$($Latest.FileName64)"
         }
         'tools\chocolateyinstall.ps1'   = @{
-            "(^\s*file64\s*=\s.*)('.*')" = "`$1'$($Latest.FileName64)'"
+            '(^\[version\] [$]softwareVersion\s*=\s*)(''.*'')' = "`$1'$($Latest.SoftwareVersion)'"
+            '(^[$]installerFilePath\s*=.*)(''.*'')'            = "`$1'$($Latest.FileName64)'"
         }
         'build.ps1'                     = @{
             '(^[$]filePath\s*=\s*.*)(''.*'')' = "`$1'$($Latest.FileName64)'"
