@@ -7,8 +7,8 @@ Confirm-Win10
 $softwareName = 'PawnIO'
 [version] $softwareVersion = '2.0.1.0'
 $currentVersion = Get-CurrentVersion
-
 $installerFilePath = Join-Path -Path $toolsDir -ChildPath 'PawnIO_setup.exe'
+
 if ($currentVersion -eq $softwareVersion -and !$env:ChocolateyForce) {
   Write-Output "$softwareName v$softwareVersion is already installed."
   Write-Output 'Skipping execution of installer.'
