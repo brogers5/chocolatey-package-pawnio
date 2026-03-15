@@ -12,7 +12,7 @@ function Get-CurrentVersion {
 function Uninstall-CurrentVersion {
     $packageArgs = @{
         packageName    = $env:ChocolateyPackageName
-        softwareName   = 'PawnIO'
+        softwareName   = $softwareName
         fileType       = 'EXE'
         silentArgs     = '-uninstall -silent'
         validExitCodes = @(0, 3010)
