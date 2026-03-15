@@ -14,7 +14,7 @@ if ($currentVersion -eq $softwareVersion -and !$env:ChocolateyForce) {
   Write-Output 'Skipping execution of installer.'
 }
 else {
-  if ($null -ne $currentVersion -and $currentVersion -le $softwareVersion) {
+  if ($null -ne $currentVersion -and $currentVersion -ge $softwareVersion) {
     Write-Output "Current installed version (v$currentVersion) must be uninstalled first..."
     Uninstall-CurrentVersion
   }
