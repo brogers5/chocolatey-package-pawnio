@@ -15,7 +15,7 @@ function Uninstall-CurrentVersion {
         softwareName   = 'PawnIO'
         fileType       = 'EXE'
         silentArgs     = '-uninstall -silent'
-        validExitCodes = @(0)
+        validExitCodes = @(0, 3010)
     }
 
     [array] $keys = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']

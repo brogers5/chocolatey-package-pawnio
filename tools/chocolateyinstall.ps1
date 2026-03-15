@@ -25,7 +25,7 @@ else {
     file64         = $installerFilePath
     softwareName   = $softwareName
     silentArgs     = '-install -silent'
-    validExitCodes = @(0)
+    validExitCodes = @(0, 3010)
   }
 
   Install-ChocolateyInstallPackage @packageArgs
